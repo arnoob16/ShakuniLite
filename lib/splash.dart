@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:shimmer/shimmer.dart';
-import 'package:rolling_Dice/homescreen.dart';
+import 'package:rolling_Dice/diceGame.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   onDoneLoading() {
     Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
+        .pushReplacement(MaterialPageRoute(builder: (context) => DiceGame()));
   }
 
   @override
@@ -34,7 +34,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Center(
         child: Container(
           alignment: Alignment.center,
